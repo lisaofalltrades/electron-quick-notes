@@ -109,9 +109,3 @@ app.on('ready', () => {
     // electron will open a window with dev inspection tools
 });
 ```
-
-In MAIN.JS , you will need to:
-    - require electron library
-    - set up a BrowserWindow object
-    - Load URLs
-- render process
