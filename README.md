@@ -5,9 +5,9 @@
 - [Dev Tools](#dev)
 
 ## Getting Started
-- Intro (read): [Essential Electron](http://jlord.us/essential-electron/)
-- Installation Guide
-- Quick Start (video): [Getting Started w/ Electron](http://jlord.us/essential-electron/)
+- Intro: [Essential Electron](http://jlord.us/essential-electron/) (read)
+- Installation Guide:
+- Quick Start: [Getting Started w/ Electron](https://youtu.be/jKzBJAowmGg) (video)
 
 ## A simple App
 Navigate to desired directory and create an empty folder. For example:
@@ -106,6 +106,12 @@ app.on('ready', () => {
     let win = new BrowserWindow({width:800, height: 600});
     win.loadURL('file://${--direname}/index.html')
     win.webContents.openDevTools();
-    // eelctron will open a window with dev inspection tools
+    // electron will open a window with dev inspection tools
 });
 ```
+
+In MAIN.JS , you will need to:
+    - require electron library
+    - set up a BrowserWindow object
+    - Load URLs
+- render process
